@@ -80,7 +80,7 @@ impl Matrix {
 	pub fn add_to_all(&mut self, value: &Fraction32) {
 		let n = self.n.get();
 		let m = self.m.get();
-		for i in 0..n {
+		for i in 0..m {
 			for j in 0..n { 
 				let t = self.get_mut(i, j).unwrap();
 				*t = *t + *value;
